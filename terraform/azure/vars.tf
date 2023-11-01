@@ -20,5 +20,5 @@ variable "subnet_cidr" {
 
 variable "fqdn" {
     type    = string
-    default = "staticsite-vm-kbssss"
+    default = "staticsite-vm-kb"
 }
