@@ -30,9 +30,13 @@ resource "aws_security_group" "sg_public" {
         protocol    = "tcp"
         cidr_blocks = ["0.0.0.0/0"]
     }
-
+     ingress {
+        description      = "TLS from VPC"
+        from_port        = 443
+        to_port          = 443
+        protocol         = "tcp"
+   }
 }
-
 data "template_file" "cloud_init" {
     template = "${file("./modules/compute/init/cloud_init.sh")}"
 }
