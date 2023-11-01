@@ -1,6 +1,6 @@
 variable "rg_name" {
     type    = string
-    default = "rg-staticsite-vmmsss"
+    default = "rg-kledsdelas"
 }
 
 variable "location" {
